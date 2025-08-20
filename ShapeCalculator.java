@@ -6,30 +6,45 @@ public class ShapeCalculator {
     public static void main(String[] args) {
       Scanner input = new Scanner(System.in);
       
-      //[[Create a Sqaure]]\\
+      //[[Cirle]]\\
       
-      int SquareSideLength;
-      int SquareArea;
+      int circleRadius;
+      double circleArea;
       
-      System.out.print("What is the side length of the sqaure ");
-      SquareSideLength = input.nextInt();
+      System.out.print("What is the radius of your circle ");
+      circleRadius = input.nextInt();
       
-      SquareArea = SquareSideLength * SquareSideLength;
+      circleArea = (Math.PI * circleRadius * circleRadius);
+      System.out.printf("Circle Area: %.2f%n", circleArea);
       
-      System.out.println("A sqaure with side length "+SquareSideLength+" is "+SquareArea);
-
-      //[[Create a Triangle]]\\
-
-      int TriangleBase;
-      int TriangleArea;
+      //[[Triangle]]\\
+      int triangleBase;
+      int triangleHeight;
+      double triangleArea;
 
       System.out.print("What is the base of your triangle ");
-      TriangleBase = input.nextInt();
-
-      TriangleArea = TriangleBase * 1/3
-
-      System.out.println("You Triangle is: "+TriangleArea)
+      triangleBase = input.nextInt();
       
+      System.out.print("What is the Height of your triangle ");
+      triangleHeight = input.nextInt();
+
+      triangleArea = (double)(triangleBase * triangleHeight) / 2;
+
+      System.out.println("You Triangle is: "+triangleArea);
+      //[[Rectangle]]\\
+      int rectangleBase;
+      int rectangleHeight;
+      double rectangleArea;
+
+      System.out.print("What is the base of your rectangle ");
+      rectangleBase = input.nextInt();
+      
+      System.out.print("What is the Height of your rectangle ");
+      rectangleHeight = input.nextInt();
+
+      rectangleArea = (rectangleBase * rectangleHeight);
+
+      System.out.println("You Rectangle is: "+rectangleArea);
     }
     
 }
