@@ -17,6 +17,18 @@ public class ShapeCalculator {
       SquareArea = SquareSideLength * SquareSideLength;
       
       System.out.println("A sqaure with side length "+SquareSideLength+" is "+SquareArea);
+
+      //[[Create a Triangle]]\\
+
+      int TriangleBase;
+      int TriangleArea;
+
+      System.out.print("What is the base of your triangle ");
+      TriangleBase = input.nextInt();
+
+      TriangleArea = TriangleBase * 1/3
+
+      System.out.println("You Triangle is: "+TriangleArea)
       
     }
     
