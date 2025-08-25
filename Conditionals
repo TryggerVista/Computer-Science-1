@@ -1,0 +1,31 @@
+package conditionals;
+
+public class Conditionals {
+
+    public static void main(String[] args) {
+        
+        int num = 5;
+        
+        /*
+        if (num == 5) {
+            System.out.println("Num is indeed 5");
+        }
+        */
+        
+        /*
+        if (num == 5) {
+            System.out.println("Num is indeed 5");
+        } else {
+            System.out.println("Num is not 5");
+        }
+        */
+        
+        if (num == 5) {
+            System.out.println("Num is 5");
+            num++;
+        }else if(num >= 3) {
+            System.out.println("Num is greater than or equal to 3");
+        }
+    }
+}
+
